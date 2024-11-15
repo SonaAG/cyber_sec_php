@@ -7,5 +7,5 @@ services:
     startCommand: "php -S 0.0.0.0:10000 -t public"
     envVars:
       - key: DATABASE_URL
-        value: "postgresql://user_database_aq9e_user:qNS89F4IJNExGBcrLwpmaR12dWsYdNlo@dpg-csr0mc68ii6s73f2bk5g-a.oregon-postgres.render.com/user_database_aq9e"
+        value: "postgres://user_database_aq9e_user:qNS89F4IJNExGBcrLwpmaR12dWsYdNlo@dpg-csr0mc68ii6s73f2bk5g-a:5432/user_database_aq9e"
 
