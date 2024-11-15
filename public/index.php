@@ -8,7 +8,7 @@ if (!$databaseUrl) {
 // Parse the DATABASE_URL environment variable
 $dbopts = parse_url($databaseUrl);
 $host = $dbopts["host"];
-$port = $dbopts["port"];
+$port = isset($dbopts["port"]) ? $dbopts["port"] : 5432;
 $user = $dbopts["user"];
 $pass = $dbopts["pass"];
 $dbname = ltrim($dbopts["path"], '/');
